@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Landing Page Ceramah</title>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <!-- FASA 1: IKLAN CERAMAH -->
+    <h1 class="title">Ceramah Kemahiran Industri IT</h1>
+
+    <img src="pensyarah.jpg" alt="Penceramah" class="speaker-img">
+
+    <p><strong>Penceramah:</strong> Encik.Sabri Bin Saep</p>
+    <p><strong>Kepakaran:</strong> Motivasi & Kerjaya</p>
+
+    <p>
+        <strong>Sinopsis:</strong><br>
+        Ceramah ini memberi pendedahan kepada pelajar mengenai
+        kemahiran dan persediaan untuk memasuki industri IT.
+    </p>
+
+    <p><strong>Tarikh:</strong> 30 April 2026</p>
+    <p><strong>Masa:</strong> 9.00 pagi – 12.00 tengah hari</p>
+    <p><strong>Lokasi:</strong> Dewan Kuliah Utama</p>
+
+    <p><strong>Yuran:</strong> RM150000 seorang</p>
+    <p><strong>Hubungan:</strong> enciksabri@gmail.com</p>
+
+    <hr>
+
+    <!-- FASA 2: BORANG TEMPAHAN -->
+    <h2>Borang Pendaftaran</h2>
+
+    <form id="bookingForm">
+
+        <label class="label">Nama Penuh</label>
+        <input type="text" id="name" class="input" required>
+
+        <label class="label">Alamat E-mel</label>
+        <input type="email" id="email" class="input" required>
+
+        <label class="label">Nombor Telefon</label>
+        <input type="text" id="phone" class="input" required>
+
+        <label class="label">Kategori Peserta</label>
+        <select id="category" class="input" required>
+            <option value="">-- Pilih --</option>
+            <option>Pelajar</option>
+            <option>Pensyarah</option>
+            <option>Orang Awam</option>
+            <option>Korporat</option>
+        </select>
+
+        <label class="label">Bilangan Slot</label>
+        <input type="number" id="slot" class="input" required>
+
+        <label class="label">Bukti Pembayaran</label>
+        <input type="file" class="input" required>
+
+        <label class="checkbox">
+            <input type="checkbox" id="agree" required>
+            Saya bersetuju dengan terma dan syarat
+        </label>
+
+        <button type="submit" class="btn">Hantar</button>
+    </form>
+
+    <!-- FASA 3: PAPARAN DATA -->
+    <div id="confirmation" class="confirmation">
+        <h2>Pengesahan Pendaftaran</h2>
+        <div id="output"></div>
+    </div>
+
+</div>
+
+<!-- External JavaScript -->
+<script src="script.js"></script>
+
+</body>
+</html>
